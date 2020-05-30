@@ -1,0 +1,11 @@
+Package: com.lacertosusrepo.coloredscrollindicator
+Name: ColoredScrollIndicator
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), ws.hbang.alderis
+Version: 1.1-1
+Architecture: iphoneos-arm
+Description: Spice up your scroll indicator...
+Maintainer: LacertosusDeus <LacertosusThemes@gmail.com>
+Author: LacertosusDeus <LacertosusThemes@gmail.com>
+Section: Tweaks
+Depiction: https://lacertosusrepo.github.io/depictions/com.lacertosusrepo.beta/
+SileoDepiction: https://lacertosusrepo.github.io/depictions/com.lacertosusrepo.beta/
