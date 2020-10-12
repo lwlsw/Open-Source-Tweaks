@@ -1,8 +1,8 @@
   //Primary Color (Navigation BG, Title)
-#define Pri_Color [UIColor colorWithRed:0.19 green:0.22 blue:0.27 alpha:1.0]
+#define Pri_Color [UIColor colorWithRed: 0.96 green: 0.56 blue: 0.18 alpha: 1.00]
 
-  //Secondary Color (Interactables, Status Bar)
-#define Sec_Color [UIColor colorWithRed:0.93 green:0.27 blue:0.32 alpha:1.0]
+  //Secondary Color (Interactables, Status Bar) #212121
+#define Sec_Color [UIColor colorWithRed: 0.13 green: 0.13 blue: 0.13 alpha: 1.00]
 
   //Alternate Color
-#define Alt_Color [UIColor colorWithRed:0.50 green:0.55 blue:0.55 alpha:1.0]
+#define Alt_Color [UIColor colorWithRed: 0.13 green: 0.13 blue: 0.13 alpha: 1.00]

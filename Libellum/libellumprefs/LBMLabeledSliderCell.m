@@ -4,7 +4,7 @@
 	UILabel *_sliderLabel;
 }
 
-	-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier specifier:(PSSpecifier *)specifier {
+	-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)identifier specifier:(PSSpecifier *)specifier {
 		self = [super initWithStyle:style reuseIdentifier:identifier specifier:specifier];
 
 		if(self) {

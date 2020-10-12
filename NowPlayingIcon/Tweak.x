@@ -3,7 +3,7 @@
  * NowPlayingIcon
  *
  * Created by Zachary Thomas Paul <LacertosusThemes@gmail.com> on 5/8/2020.
- * Copyright © 2019 LacertosusDeus <LacertosusThemes@gmail.com>. All rights reserved.
+ * Copyright © 2020 LacertosusDeus <LacertosusThemes@gmail.com>. All rights reserved.
  */
 #import "NowPlayingIcon.h"
 
@@ -22,11 +22,11 @@ void nowPlayingInfoDidChange() {
       __NSSingleObjectArrayI *purgeTheseIcons = [NSClassFromString(@"__NSSingleObjectArrayI") arrayWithObjects:appIcon, nil];
       [[((SBIconController *)[NSClassFromString(@"SBIconController") sharedInstance]).iconManager iconImageCache] purgeCachedImagesForIcons:purgeTheseIcons];
       [[((SBIconController *)[NSClassFromString(@"SBIconController") sharedInstance]).iconManager iconImageCache] notifyObserversOfUpdateForIcon:appIcon];
-      //NSLog(@"%@ || %@ || %@", nowPlayingApp, [appIcon applicationBundleID], purgeTheseIcons);
+      //os_log(OS_LOG_DEFAULT, "%@ || %@ || %@", nowPlayingApp, [appIcon applicationBundleID], purgeTheseIcons);
       maskedArtwork = nil;
 
     } else {
-      NSLog(@"NowPlayingIcon || SBApplicationIcon is not initialized with any application");
+      os_log(OS_LOG_DEFAULT, "NowPlayingIcon || SBApplicationIcon is not initialized with any application");
     }
   }
 
@@ -56,7 +56,7 @@ void nowPlayingInfoDidChange() {
           NSData *oldArtworkData = UIImageJPEGRepresentation(artwork, 1.0);
           NSData *newArtworkData = UIImageJPEGRepresentation([UIImage imageWithData:artworkData], 1.0);
           if([oldArtworkData isEqualToData:newArtworkData]) {
-            NSLog(@"NowPlayingIcon || Duplicate artwork data");
+            os_log(OS_LOG_DEFAULT, "NowPlayingIcon || Duplicate artwork data");
             return;
           }
 
